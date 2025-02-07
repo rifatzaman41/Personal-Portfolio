@@ -101,10 +101,11 @@ main section{
 .about-items{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+  
 }
-.item-des{
-    font-weight: 600;
-}
+
 .skills-container{
     display: flex;
     gap: 24px;
