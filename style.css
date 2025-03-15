@@ -98,13 +98,12 @@ main section{
     margin-top: 130px;
 
 }
-.about-items{
+.about-items {
     display: flex;
     justify-content: space-around;
-}
-.item-des{
-    font-weight: 600;
-}
+    flex-wrap: wrap;
+    gap: 20px;
+  }
 .skills-container{
     display: flex;
     gap: 24px;
@@ -145,12 +144,51 @@ footer{
 .social-links{
     margin-right: 25px;
 }
-.contact input[type="text"],.contact input[type="email"],textarea{
+footer input[type="text"],footer input[type="email"],footer textarea{
+   height: 64px;
+   border-radius: 5px;
+   background-color: #FFF;
     display: block;
-    margin-bottom: 25px;
-    padding:18px 35px;
-    color: #757575;
-    background-color: #FFF;
-    border: 0;
     width: 100%;
+    padding:10px 20px;
+    margin-bottom: 24px;
+    border: none;
+}
+/* responsive layout */
+
+@media screen and (max-width:576px) {
+    .skills-container,.resume-container,.banner,footer,nav,nav > ul,.about-items{
+flex-direction: column;
+    }
+    nav > ul{
+        gap: 10px;
+    }
+    .btn-primary{
+        margin-bottom: 30px;
+    }
+    .banner{
+        margin: 20px;
+    }
+    .banner-pic{
+        width: 100%;
+    }
+    .header{
+        background-image: none;
+    }
+    footer,.about{
+        padding: 20px;
+    }
+    .footer-column{
+        width: 100%;
+    }
+    footer input[type="text"],footer input[type="email"],footer textarea{
+width: calc(100% - 40px);
+    }
+}
+
+/* tablet  */
+@media screen and (min-width:576px) and (max-width:990px) {
+    .banner{
+        flex-direction: column;
+    }
 }
