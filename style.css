@@ -103,7 +103,13 @@ main section{
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 20px;
+<<<<<<< HEAD
   }
+=======
+  
+}
+
+>>>>>>> de07e3b144a391d8be0e3ddc48919449685cb610
 .skills-container{
     display: flex;
     gap: 24px;
