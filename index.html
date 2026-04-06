@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="open-sans-normal">
+
+
     <header class="header secondary-bg">
         <nav>
             <h3 class="nav-title">Ma<span class="text-primary">r</span>y</h3>
@@ -146,6 +148,19 @@
 </div>
 
                 </footer>
+                <!-- n8n Chat Script -->
+
+<script type="module">
+  import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+  window.addEventListener("load", () => {
+    createChat({
+      webhookUrl: 'https://n8n.srv1106977.hstgr.cloud/webhook/c9d2ae6c-8d9f-4260-9954-fe8492f7bf3a/chat',
+      mode: 'window'
+    });
+  });
+</script>
+
 </div>
 </body>
 </html>
