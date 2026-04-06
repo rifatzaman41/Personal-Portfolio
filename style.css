@@ -103,13 +103,10 @@ main section{
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 20px;
-<<<<<<< HEAD
   }
-=======
   
-}
 
->>>>>>> de07e3b144a391d8be0e3ddc48919449685cb610
+
 .skills-container{
     display: flex;
     gap: 24px;
@@ -160,9 +157,7 @@ footer input[type="text"],footer input[type="email"],footer textarea{
     margin-bottom: 24px;
     border: none;
 }
-<<<<<<< HEAD
  
-=======
 /* responsive layout */
 
 @media screen and (max-width:576px) {
@@ -201,4 +196,3 @@ width: calc(100% - 40px);
         flex-direction: column;
     }
 }
->>>>>>> 51283eb1f35e9a30365def7b960cf34fafa4f433
